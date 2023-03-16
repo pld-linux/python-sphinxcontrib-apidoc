@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# unit tests
+%bcond_without	tests	# unit tests (requires package already installed)
 %bcond_without	python2 # CPython 2.x module
 %bcond_without	python3 # CPython 3.x module
 
@@ -22,7 +22,7 @@ BuildRequires:	python-setuptools
 %if %{with tests}
 BuildRequires:	python-Sphinx >= 1.6.0
 BuildRequires:	python-pytest >= 3.0
-BuildRequires:	python-pytest < 4.0
+BuildRequires:	python-sphinxcontrib-apidoc
 %endif
 %endif
 %if %{with python3}
@@ -32,7 +32,7 @@ BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	python3-Sphinx >= 1.6.0
 BuildRequires:	python3-pytest >= 3.0
-BuildRequires:	python3-pytest < 4.0
+BuildRequires:	python3-sphinxcontrib-apidoc
 %endif
 %endif
 BuildRequires:	rpm-pythonprov
