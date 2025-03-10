@@ -8,7 +8,7 @@ Summary:	Sphinx extension for running 'sphinx-apidoc' on each build
 Summary(pl.UTF-8):	Rozszerzenie Sphinksa do uruchamiania 'sphinx-apidoc' przy każdym budowaniu
 Name:		python-sphinxcontrib-apidoc
 Version:	0.3.0
-Release:	4
+Release:	5
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/sphinxcontrib-apidoc/
